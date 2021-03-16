@@ -1,3 +1,3 @@
-import Stores from "./Stores";
+import Stores from "../../Container/stores/index";
 
 export default Stores;

@@ -11,7 +11,6 @@ import {
   faStore,
 } from "@fortawesome/free-solid-svg-icons";
 import { ToggleLanguage } from "../Toggle/Language";
-import { useHistory } from "react-router-dom";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { MenuBurger } from "../MenuBurger";
@@ -22,7 +21,6 @@ const WIDTH_CHANGING = 1024;
 
 export function Header() {
   const router = useRouter();
-  const history = useHistory();
   const { user, setUser } = useContext(UserContext);
   const [width, setWidth] = useState(0);
   const [open, setOpen] = useState(false);
@@ -45,7 +43,7 @@ export function Header() {
     localStorage.removeItem("token");
     getFirestoreAuth().signOut();
     setUser(null);
-    history.push("/");
+    router.push("/");
   };
 
   return (
