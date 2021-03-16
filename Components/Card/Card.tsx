@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
-//import { CardTemplate } from "./CardTemplate";
+import { CardTemplate } from "./CardTemplate";
+import { useRouter } from "next/router";
 
 export function Card({ result }: any) {
   const compressName = (name: string) => {
@@ -11,14 +11,13 @@ export function Card({ result }: any) {
 
   result.name = compressName(result.name);
 
-  const history = useHistory();
+  const router = useRouter();
   function navToProductPage(product: any) {
     incrementCounter(product);
 
     const query = window.location.search;
-    history.push({
-      pathname: `/product/${product.id}${query}`,
-      state: { product },
+    router.push({
+      pathname: `/product/${product.id}`,
     });
   }
 

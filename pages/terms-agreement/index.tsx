@@ -1,3 +1,3 @@
-import TermsAgreement from "./TermsAgreement";
+import TermsAgreement from "../../Container/terms-agreement/index";
 
 export default TermsAgreement;

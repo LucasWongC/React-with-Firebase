@@ -1,3 +1,3 @@
-import MyAccount from "./MyAccount";
+import MyAccount from "../../Container/my-account/index";
 
 export default MyAccount;

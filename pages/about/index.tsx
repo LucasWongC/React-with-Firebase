@@ -1,9 +1,3 @@
-import About from "./About";
+import About from "../../Container/about/index";
 
 export default About;
-
-// const About = () => {
-//     return(<h1>About Page here</h1>)
-// };
-
-// export default About;

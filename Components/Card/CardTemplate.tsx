@@ -7,7 +7,7 @@ import {
   faShoppingBag,
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import { formatURL } from "../../pages/Store/Store";
+import { formatURL } from "../../Container/store/Store";
 
 interface CardTemplateType {
   img?: string;

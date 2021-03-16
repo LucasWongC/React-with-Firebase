@@ -1,3 +1,3 @@
-import Privacy from "./Privacy";
+import Privacy from "../../Container/privacy/index";
 
 export default Privacy;
